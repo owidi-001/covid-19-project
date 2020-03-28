@@ -1,0 +1,88 @@
+/* globals */
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    text-align: center;
+}
+.flow-text{
+    color: green;
+    font-size: large;
+}
+i.fa{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(2, 2, 58);
+    padding: 20px;
+    /* margin: 0px auto; */
+    
+}
+.btn{
+    width: 100%;
+}
+section{
+    height: 100vh;
+}
+iframe ,.iframe{
+    padding: 20px;
+}
+
+/* showcase */
+#showcase{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../imgs/showcase.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-columns: 2fr 1fr;
+}
+/* #showcase .text-caption{
+} */
+#showcase .text-caption h2{
+    color: blanchedalmond;
+    padding-top: 30px;
+    font-weight: 800;
+}
+#showcase .text-caption .container-grid{
+    padding: 20px;
+
+}
+#showcase .text-caption .row .card{
+    height: 60vh;
+}
+#showcase .text-caption .row h4.header{
+    color: blanchedalmond;
+}
+#showcase .text-caption .row .card .card-image img{
+    height: 100%;
+}
+#showcase .text-caption .row .card .card-stacked{
+    background: rgba(0, 0, 0, 0.030);
+} 
+#showcase .text-caption .row .card .card-stacked ul li{
+    list-style-type: disc;
+    mix-blend-mode: multiply;
+}
+#showcase .text-caption .row .card .card-stacked ul li ol li{
+    list-style-type: circle;
+}
+#showcase .text-caption .row .card .card-stacked .card-action a{
+    color: rgb(6, 6, 32) !important;
+    font-weight: 700;
+}
+#second{
+    display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.030);
+}
+#second .row .m4{
+    padding: 20px;
+}
+#c{
+    background: #000;
+    color: cornsilk;
+
+}
