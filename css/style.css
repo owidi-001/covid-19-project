@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
 }
 .flow-text{
-    color: green;
+    color: rgb(2, 2, 58);
     font-size: large;
 }
 i.fa{
@@ -20,12 +20,22 @@ i.fa{
 }
 .btn{
     width: 100%;
+    background: rgb(2, 2, 58);
+}
+.btn:hover{
+    background: rgb(2, 2, 58);
 }
 section{
     height: 100vh;
 }
 iframe ,.iframe{
     padding: 20px;
+}
+
+/* navigation */
+#menu{
+    padding: 20px;
+    color: aliceblue;
 }
 
 /* showcase */
@@ -37,39 +47,48 @@ iframe ,.iframe{
     height: 100vh;
     display: grid;
     /* grid-template-columns: repeat(2,1fr); */
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    position: relative;
+    
 }
 /* #showcase .text-caption{
 } */
 #showcase .text-caption h2{
+    position: absolute;
+    top: 0;
+    right: 0;
     color: blanchedalmond;
-    padding-top: 30px;
+    padding: 30px;
     font-weight: 800;
 }
-#showcase .text-caption .container-grid{
+#showcase .text-caption .container{
     padding: 20px;
 
 }
-#showcase .text-caption .row .card{
+#showcase .row .card{
     height: 60vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
 }
-#showcase .text-caption .row h4.header{
+#showcase .row h4.header{
     color: blanchedalmond;
 }
-#showcase .text-caption .row .card .card-image img{
+#showcase .row .card .card-image img{
     height: 100%;
 }
-#showcase .text-caption .row .card .card-stacked{
+#showcase .row .card .card-stacked{
     background: rgba(0, 0, 0, 0.030);
 } 
-#showcase .text-caption .row .card .card-stacked ul li{
+#showcase .row .card .card-stacked ul li{
     list-style-type: disc;
     mix-blend-mode: multiply;
 }
-#showcase .text-caption .row .card .card-stacked ul li ol li{
+#showcase .row .card .card-stacked ul li ol li{
     list-style-type: circle;
 }
-#showcase .text-caption .row .card .card-stacked .card-action a{
+#showcase .row .card .card-stacked .card-action a{
     color: rgb(6, 6, 32) !important;
     font-weight: 700;
 }
@@ -85,4 +104,8 @@ iframe ,.iframe{
     background: #000;
     color: cornsilk;
 
+}
+
+footer .footer-copyright{
+    background: rgb(2, 2, 58) !important;
 }
