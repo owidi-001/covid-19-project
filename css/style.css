@@ -145,12 +145,27 @@ i.fa{
 .card-area{
     position: relative;
 }
-.card-area .card{
+.card-area .card-item{
     position: absolute;
-    top: -900px;
+    top: -700px;
     color: var(--primary-color);
-    font-size: medium;
+	font-size: medium;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	border-radius: 5px; /* 5px rounded corners */
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
+.card-area .card-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-area .card-item .caption {
+  padding: 2px 16px;
+  background: #fff;
+}
+.card-area .card-item img{
+    border-radius: 5px 5px 0 0;
+  }
 
 
 
@@ -176,6 +191,7 @@ i.fa{
 		position: static;
 		width: 100%;
 	}
+
 
 	.section-top {
 		min-height: 200px;
@@ -203,6 +219,17 @@ i.fa{
 	.section-grid {
 		display: block;
 		margin-top: 0;
+	}
+	.card-area .card-item{
+		top: -950px;
+		display: block;
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+	.card-area .card-item .caption{
+
+		padding: 0;
 	}
 
 	.footer ul {
