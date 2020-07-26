@@ -4,273 +4,407 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>corona virus</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-
-    <!-- Compiled and minified materialize CSS -->
+    <title>Covid-19</title>
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- local css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/materialize.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <section class="section section-top">
-        <div class="content rellax" data-rellax-speed="-1">
-            <h1>Corona virus <br> (COVID-19)</h1>
-            <a href="#" class="btns btn-primary">Learn More</a>
-        </div>
-    </section>
+    <header class="center">
+        <h4>corona virus (Covid-19)</h4>
+    </header>
+    <!-- nav -->
+    <div class="sticky-top #1a237e">
+        <nav class="#1a237e indigo darken-4">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">corona</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="fa fa-bars fa-2x white-text"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#modal1" class="modal-trigger">About</a></li>
+                    <li><a href="#contact" class="waves-effect">contact</a></li>
+                    <li><a href="#modal3" class="modal-trigger">faqs</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <section class="section section-stream">
-        <img class="play rellax" src="./imgs/showcase1.jpg" alt="" data-rellax-speed="1" data-rellax-xs-speed="5" />
-        <div class="content rellax" data-rellax-speed="10">
-            <div>
-                <h2 class="primary-text">What is corona virus</h2>
-                <p>
-                    Coronaviruses are a group of related viruses that cause diseases in mammals and birds. In humans,
-                    coronaviruses cause respiratory tract infections that can be mild, such as some cases of the common
-                    cold (among other possible causes, predominantly rhinoviruses), and others that can be lethal, such
-                    as SARS, MERS, and COVID-19
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="faqs.html">faqs</a></li>
+        </ul>
+    </div>
+    <!-- main -->
+    <main>
+        <div class="showcase">
+            <div class="left">
+                <h4 class="indigo-text darken-4 lighten-3">Facts of <span class="red-text">corona virus</span> </h4>
+                <p class="flow-text grey-text">
+                    Coronavirus is a family of viruses, some of which can infect people and animals, named for crownlike
+                    spikes on their surfaces.
+                </p>
+                <p class="flow-text grey-text">
+                    “CO” stands for corona, “VI” for virus, “D” for disease, and “19” refers to 2019, the year
+                    in which it was first discovered. COVID-19 is a new disease caused by a novel member of the
+                    coronavirus family — SARS-CoV-2 — that’s a close cousin to the SARS and MERS viruses that
+                    have caused outbreaks in the past. There is still much to learn about the disease.
                 </p>
             </div>
-            <div>
-                <h2 class="primary-text">It's Etymology</h2 class="secondary-text">
-                <p>The name "coronavirus" is derived from Latin corona, meaning "crown" or "wreath", itself a borrowing
-                    from Greek κορώνη korṓnē, "garland, wreath". The name refers to the characteristic appearance of
-                    virions (the infective form of the virus) by electron microscopy, which have a fringe of large,
-                    bulbous surface projections creating an image reminiscent of a crown or of a solar corona. </p>
-            </div>
         </div>
-    </section>
-
-    <section class="section section-grid">
-        <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="3">
-            <div class="col s12 m4 l4">
-                <h5 class="service-heading">who is at risk?</h5>
+        <!-- article -->
+        <article>
+            <div class="container center">
+                <h4 class="center indigo-text darken-4 lighten4">Safety measures.</h4>
                 <div class="row">
-                    <div class="col s12 m3 l4">
-                        <i class=" 	fa fa-heartbeat"></i>
+                    <div class="col s12 m4 l4">
+                        <i class="fa fa-hand-stop-o fa-3x"></i>
+                        <h6>Wash Your hands</h6>
+                        <p>Wash your hands often with soap and water for at least 20 seconds especially after you have
+                            been in a public place, or after blowing your nose, coughing, or sneezing..</p>
                     </div>
-                    <div class="col s12 m9 l8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
-                            quam
-                            architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <div class="col s12 m4 l4">
+                        <i class="fa fa-heartbeat fa-3x"></i>
+                        <h6>Keep social distance</h6>
+                        <p>Avoid close contact with people who are sick.
+                            If possible, maintain 6 feet between the person who is sick and other household members..
+                        </p>
                     </div>
-                </div>
-                <a href="#" class="waves-effect btns">Read more ></a>
-            </div>
-        </div>
-        <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3">
-            <h5 class="service-heading">What are the signs?</h5>
-            <div class="row">
-                <div class="col s12 m3 l4">
-
-                    <i class="fa fa-user-md"></i>
-                </div>
-                <div class="col s12 m9 l8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
-                        quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-
-                </div>
-                <a href="#" class="waves-effect btns">Read more ></a>
-            </div>
-        </div>
-        <div class="rellax" data-rellax-speed="3" data-rellax-xs-speed="3">
-            <h5 class="service-heading">How is it transmitted?</h5>
-            <div class="row">
-                <div class="col s12 m3 l4">
-
-                    <i class="fa fa-medkit"></i>
-                </div>
-                <div class="col s12 m9 l8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
-                        quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <a href="#" class="waves-effect btns">Read more ></a>
-            </div>
-        </div>
-
-        <!-- two -->
-        <div class="rellax" data-rellax-speed="6" data-rellax-xs-speed="3">
-            <div class="col s12 m4 l4">
-                <h5 class="service-heading">Is there a cure?</h5>
-                <div class="row">
-                    <div class="col s12 m3 l4">
-                        <i class=" 	fa fa-ambulance"></i>
-                    </div>
-                    <div class="col s12 m9 l8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
-                            quam
-                            architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-                <a href="#" class="waves-effect btns">Read more ></a>
-            </div>
-        </div>
-        <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3">
-            <h5 class="service-heading">What are the signs?</h5>
-            <div class="row">
-                <div class="col s12 m3 l4">
-
-                    <i class="fa fa-stethoscope"></i>
-                </div>
-                <div class="col s12 m9 l8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
-                        quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-
-                </div>
-                <a href="#" class="waves-effect btns">Read more ></a>
-            </div>
-        </div>
-        <div class="rellax" data-rellax-speed="3" data-rellax-xs-speed="3">
-            <h5 class="service-heading">How is it transmitted?</h5>
-            <div class="row">
-                <div class="col s12 m3 l4">
-
-                    <i class="fa fa-wheelchair"></i>
-                </div>
-                <div class="col s12 m9 l8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime
-                        quam
-                        architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <a href="#" class="waves-effect btns">Read more ></a>
-            </div>
-        </div>
-
-        <div class="rellax" data-rellax-speed="6" data-rellax-xs-speed="3">
-            <div class="col s12 m4 l4">
-                <h5 class="service-heading">The viron structure</h5>
-                <div class="row">
-                    <div class="col s12 m3 l4">
-                        <i class=" 	fa fa-virus"></i>
-                    </div>
-                    <div class="col s12 m9 l8">
-                        <img alt=""
-                            src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Coronavirus_virion_structure.svg/220px-Coronavirus_virion_structure.svg.png"
-                            decoding="async" class="thumbimage"
-                            srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Coronavirus_virion_structure.svg/330px-Coronavirus_virion_structure.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Coronavirus_virion_structure.svg/440px-Coronavirus_virion_structure.svg.png 2x"
-                            data-file-width="512" data-file-height="393" width="220" height="169">
-                    </div>
-                </div>
-                <a href="#" class="waves-effect btns">Read more ></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="card-area container">
-        <div class="row">
-            <div class="col s12">
-                <div class="card-item">
-                    <img src="./imgs/showcase1.jpg" class="responsive-img" alt="Avatar">
-                    <div class="caption">
-                        <ul>
-                            <li>There is currently no vaccine to prevent coronavirus disease 2019
-                                (COVID-19).</li>
-                            <li>The best way to prevent illness is to avoid being exposed to this virus.
-                            </li>
-                            <li>The virus is thought to spread mainly from person-to-person.
-                                <ol>
-                                    <li>Between people who are in close contact with one another (within
-                                        about 6 feet).</li>
-                                    <li>Through respiratory droplets produced when an infected person coughs
-                                        or sneezes.</li>
-                                </ol>
-                            </li>
-                            <li>These droplets can land in the mouths or noses of people who are nearby or
-                                possibly be inhaled into the lungs.</li>
-                
-                        </ul>
-                    </div>
-                  </div> 
-                  
-            </div>
-        </div>
-    </section>
-    <!-- parallax section -->
-
-    <section class="parrallax">
-
-        <div class="parallax-container">
-            <div class="parallax"><img src="./imgs/coronavirus_1.jpg"></div>
-        </div>
-        <article class="article white">
-            <h5>Info from Centers for disease control</h5>
-            <div class="row container">
-                <div class="col s12 m6 l6">
-                    <div class="iframe card-panel hoverable">
-                        <span class="title">
-                            <h5>health proffessionals</h5>
-                        </span>
-                        <iframe height="100%" width="100%"
-                            src="https://www.cdc.gov/coronavirus/2019-ncov/hcp/index.html" frameborder="0"></iframe>
-                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/index.html" class="btn">Visit</a>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="iframe card-panel hoverable">
-                        <span class="title">
-                            <h5>healthcare-facilities</h5>
-                        </span>
-                        <iframe height="100%" width="100%"
-                            src="https://www.cdc.gov/coronavirus/2019-ncov/healthcare-facilities/index.html"
-                            frameborder="0"></iframe>
-                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/healthcare-facilities/index.html"
-                            class="btn">Visit</a>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="iframe card-panel hoverable">
-                        <span class="title">
-                            <h5>laboratory</h5>
-                        </span>
-                        <iframe height="100%" width="100%"
-                            src="https://www.cdc.gov/coronavirus/2019-ncov/lab/index.html" frameborder="0"></iframe>
-                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/lab/index.html" class="btn">Visit</a>
-                    </div>
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="iframe card-panel hoverable">
-                        <span class="title">
-                            <h5>laboratory</h5>
-                        </span>
-                        <iframe height="100%" width="100%"
-                            src="https://www.cdc.gov/coronavirus/2019-ncov/lab/index.html" frameborder="0"></iframe>
-                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/lab/index.html" class="btn">Visit</a>
+                    <div class="col s12 m4 l4">
+                        <i class="fa fa-stethoscope fa-3x"></i>
+                        <h6>Wear a face mask</h6>
+                        <p>Everyone should wear a cloth face cover in public settings and when around people who don’t
+                            live in your household, especially when other social distancing measures are difficult to
+                            maintain</p>
                     </div>
                 </div>
             </div>
+
+            <!-- parallax -->
+            <div class="parallax-container">
+                <div class="parallax"><img src="./assets/imgs/showcase1.jpg"></div>
+            </div>
+            <section class="section">
+                <div class="first">
+                    <h3 class="indigo-text darken-4 lighten-3">Impacts of the pandemic</h3>
+
+                    <p>The virus has brought about negative impacts on the socio-econimical sector as many businesses
+                        have been forced to close to aid curb the spread!</p>
+                    <p>However, the pandemic has brought a positive impact on the environment and wildlife sector.
+                        Closure of industries lead to less emmisions of carbon gases into the atmosphere which as a
+                        result has improved the environment.</p>
+
+                    <a href="./assets/docs/Brief2-COVID-19-final-June2020.pdf" download>read more >></a>
+                </div>
+                <div class="second white-text #1a237e indigo darken-4">
+                    <h3 class="header">Ways of spread</h3>
+                    <p>
+                        Data from published epidemiology and virologic studies provide evidence that COVID-19 is
+                        primarily transmitted from symptomatic people to others who are in close contact through
+                        respiratory droplets, by direct contact with infected persons, or by contact with contaminated
+                        objects and surfaces.
+                    </p>
+                    <a href="https://www.worldometers.info/coronavirus/countries-where-coronavirus-has-spread/">Realtime
+                        data >></a>
+                </div>
+                <div class="third grey">
+                    <h3 class="header">signs of the virus</h3>
+                    <iframe src="https://www.youtube.com/embed/n6QwnzbRUyA?autoplay=1"></iframe>
+                    </iframe>
+                </div>
+                <div class="fourth center">
+                    <i class="fa fa-ban fa-4x red-text"></i> <br>
+                    <b>STAY HOME. SAVE LIVES.</b>
+                    <small>
+                        <h6 class="indigo-text darken-4 lighten-3">help stop corona virus</h6>
+                    </small>
+                    <ul>
+                        <li><b>STAY</b> home as much</li>
+                        <li><b>KEEP</b> a safe distance.</li>
+                        <li><b>WASH</b> hands often.</li>
+                        <li><b>COVER</b> your cough.</li>
+                        <li><b>SICK?</b> Call ahead.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content center">
+                <!-- Modal Trigger -->
+                <span>
+                    <a class="waves-effect waves-light modal-trigger" href="#modal1"><i
+                            class="fa fa-heartbeat fa-3x"></i></a>
+                    <a class="waves-effect waves-light modal-trigger" href="#modal2"><i
+                            class="fa fa-arrows-h fa-3x"></i></a>
+                    <a class="waves-effect waves-light modal-trigger" href="#modal3"><i
+                            class="fa fa-user-md fa-3x"></i></a>
+                </span>
+            </section>
+
         </article>
+        <!-- fixed social button -->
+        <section class="">
+            <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                <i class="fa fa-telegram small mdi-editor-mode-edit"></i>
 
-    </section>
+                <ul>
+                    <li><a href="#" target="_blank" class="btn-floating #007bb5  light-blue accent-3 social linkedin"
+                            style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i
+                                class="fa fa-linkedin"></i></a></li>
+                    <li>
+                        <a href="#" target="_blank" class="btn-floating #4dc247 green lighten-1 social whatsapp"
+                            style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;">
+                            <i class="fa fa-whatsapp"></i>
+                            <i class="large mdi-editor-insert-invitation"></i>
+                        </a>
+                    </li>
+                    <li><a href="#" target="_blank" class="btn-floating #303f9f indigo darken-2 social facebook"
+                            style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank" class="btn-floating blue social twitter"
+                            style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i
+                                class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <ul>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Notice</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
+        <footer class="page-footer #1a237e indigo darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col m4 l4 s12">
+                        <h5>stay connected</h5>
+                        <small>Join millions receiving regular updates</small>
+                        <form>
 
-        <!-- rellax library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
-            integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <button type="submit" class="btn #1a237e indigo darken-4 right"
+                                    style="width: 100%;">Subscribe</button>
+                            </div>
+                            <br>
+                        </form>
+                        <!-- <div class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                        <i class="fa fa-facebook fa-2x"></i>
+                        <i class="fa fa-linkedin fa-2x"></i>
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </div> -->
+                    </div>
+                    <div class="col m4 l4 s12 center white">
+                        <h5 class="black-text">The virion.</h5>
+                        <img src="./assets/imgs/virion.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="col l4 m4 s12 center">
+                        <div class="block">
+                            <small>
+                                <h6 class="white-text">general inquiries</h6>
+                            </small>
+                            <small>
+                                <ul>
+                                    <li>Telephone:<a class="grey-text text-lighten-3" href="#!">0791381653</a></li>
+                                    <li>Email Me:<a class="grey-text text-lighten-3"
+                                            href="#!">kevinalex846@gmail.com</a></li>
+                                </ul>
+                            </small>
+                        </div>
+                        <div class="block">
+                            <small>
+                                <h6 class="white-text">Customer Service</h6>
+                            </small>
+                            <small>
+                                <ul>
+                                    <li>Telephone:<a class="grey-text text-lighten-3" href="#!">0791381663</a></li>
+                                    <li>Email Us:<a class="grey-text text-lighten-3" href="#!">contact@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </small>
+                        </div>
+                        <div class="block">
+                            <small>
+                                <h6 class="white-text">Follow us:</h6>
+                            </small>
+                            <small>
+                                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>/ <a
+                                    href="http://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>/
+                                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <!-- my contact -->
+                <!-- <a id="socio-contact" class="waves-effect waves-light btn btn-floating right"><i class="fa fa-facebook-messenger"></i></a> -->
+            </div>
+            <div class="footer-copyright #1a237e indigo darken-4">
+                <div class="container">
+                    <ul class="row">
+                        <li class="col s12 m4 l4"><a href="#" class="nav-link white-text">Privacy Policy</a></li>
+                        <li class="col s12 m4 l4"><a href="#" class="nav-link white-text">&copy; Owidi kevin 2019</a>
+                        </li>
+                        <li class="col s12 m4 l4"><a href="#" class="nav-link white-text">subject to copyright</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
-        <!-- Compiled and minified materialize JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </main>
 
-        <script>
-            M.AutoInit()
-        </script>
 
-        <script src="./js/script.js"></script>
+
+    <!-- modals -->
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4 class="indigo-text center">STAY SAFE</h4>
+            <h6 class="indigo-text center">Help flatten the curve</h6>
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <h4>Why stay home.</h4>
+                    <p>COVID-19 and related isolation measures have led to children spending more time socialising,
+                        learning and playing online. End Violence has teamed up with our partners in the technology
+                        industry, including Microsoft, Facebook, Google, Twitter, Roblox and Snapchat, to develop a new
+                        campaign to help keep children safe in this rapidly changing environment.</p>
+                </div>
+                <div class="col s12 m4 l4">
+                    <h4 class="indigo-text">Be obedient</h4>
+                    <img src="./assets/imgs/posters/two.jpg" alt="" class="responsive-img">
+                </div>
+                <div class="col s12 m4 l4">
+                    <h4 class="indigo-text">Have a family time</h4>
+                    <img src="./assets/imgs/posters/one.jpg" alt="" class="responsive-img">
+
+                </div>
+            </div>
+            <div class="container">
+                <h4 class="center indigo-text">We regularly update our content</h4>
+                <img src="./assets/imgs/posters/about.png" alt="" class="responsive-img">
+            </div>
+            <div class="container">
+                <h4 class="center indigo-text">Know the history.</h4>
+                <iframe src="https://www.labmanager.com/lab-health-and-safety/covid-19-a-history-of-coronavirus-22021"
+                    width="100%" height="300px" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+    <div id="modal2" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4 class="center indigo-text">keep distance</h4>
+            <div class="row">
+
+
+                <div class="col s12 m4 l4">
+                    <h5>What is social distancing</h5>
+                    <p class="flow-text">
+                        Social distancing, also called “physical distancing,” means keeping a safe space between
+                        yourself and other people who are not from your household.
+                    </p>
+                    <p class="flow-text">
+                        To practice social or physical distancing, stay at least 6 feet (about 2 arms’ length) from
+                        other people who are not from your household in both indoor and outdoor spaces.
+                    </p>
+                    <p class="flow-text">
+                        Social distancing should be practiced in combination with other everyday preventive actions to
+                        reduce the spread of COVID-19, including wearing cloth face coverings, avoiding touching your
+                        face with unwashed hands, and frequently washing your hands with soap and water for at least 20
+                        seconds.
+                    </p>
+                </div>
+                <div class="col s12 m4 l4">
+                    <h5 class="center">Tips for Social Distancing</h5>
+                    <ol>
+                        <li>Know Before You Go</li>
+                        <li>Prepare for Transportation</li>
+                        <li>Limit Contact When Running Errands</li>
+                        <li>Choose Safe Social Activities</li>
+                        <li>Keep Distance at Events and Gatherings</li>
+                        <li>Stay Distanced While Being Active</li>
+                    </ol>
+                </div>
+                <div class="col s12 m4 l4">
+                    <h5>the Demo</h5>
+                    <iframe width="335" height="189" src="https://www.youtube.com/embed/nOa8wIhQdzo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"></a>
+        </div>
+    </div>
+    <div id="modal3" class="modal bottom-sheet">
+        <div class="modal-content container">
+            <h4>How to Protect Yourself & Others</h4>
+            <p>Expand your knowledge:</p>
+            <blockquote cite="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/index.html">
+
+            </blockquote>
+
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/imgs/posters/prevent-getting-sick-landing.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Wash your hands<i
+                                    class="fa fa-caret-down right"></i></span>
+                            <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Learn
+                                    More>></a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Why wash your hands<i
+                                    class="fa fa-times right"></i></span>
+                            <p>Handwashing with soap removes germs from hands. This helps prevent infections because:
+                                People
+                                frequently touch their eyes, nose, and mouth without even realizing it. Germs can get
+                                into the
+                                body through the eyes, nose and mouth and make us sick</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">
+                    <iframe src="https://www.youtube.com/embed/-LKVUarhtvE" height="236px" width="100%"
+                        frameborder="0"></iframe>
+                </div>
+            </div>
+            <h3 class="indigo-text center">FAQS</h3>
+            <div class="container">
+                <!-- more info -->
+                <h5>How does it differ with other viruses?</h5>
+                <img src="./assets/imgs/posters/coronavirus-graphic-web-feature.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="container">
+                <h6>How to handle the infected</h6>
+                <img src="./assets/imgs/posters/doc.jpg" alt="" class="responsive-img">
+            </div>
+            <div class="container">
+                <h6>Did they really come from bats?</h6>
+                <img src="./assets/imgs/posters/battie.jpg" alt="" class="responsive-img">
+            </div>
+
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/materialize.js"></script>
+    <!-- font -->
+    <script defer src="/your-path-to-fontawesome/js/all.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
 </body>
 
 </html>
