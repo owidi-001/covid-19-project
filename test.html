@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19</title>
+    <!-- google font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lemonade&family=Monserrat:wght@200&family=Satisfy&display=swap">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,20 +17,17 @@
 </head>
 
 <body>
-    <header class="center">
-        <h4>corona virus (Covid-19)</h4>
-    </header>
     <!-- nav -->
     <div class="sticky-top #1a237e">
         <nav class="#1a237e indigo darken-4">
             <div class="nav-wrapper container">
-                <a href="#!" class="brand-logo">corona</a>
+                <a href="#!" class="brand-logo">covid-19</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
                         class="fa fa-bars fa-2x white-text"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#modal1" class="modal-trigger">About</a></li>
-                    <li><a href="#contact" class="waves-effect">contact</a></li>
+                    <li><a href="#modal2" class="modal-trigger">Contact</a></li>
                     <li><a href="#modal3" class="modal-trigger">faqs</a></li>
                 </ul>
             </div>
@@ -35,28 +35,29 @@
 
         <ul class="sidenav" id="mobile-demo">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="faqs.html">faqs</a></li>
+            <li><a href="#modal1">About</a></li>
+            <li><a href="#modal2">Contact</a></li>
+            <li><a href="#modal3">faqs</a></li>
         </ul>
     </div>
     <!-- main -->
     <main>
-        <div class="showcase">
-            <div class="left">
-                <h4 class="indigo-text darken-4 lighten-3">Facts of <span class="red-text">corona virus</span> </h4>
-                <p class="flow-text grey-text">
-                    Coronavirus is a family of viruses, some of which can infect people and animals, named for crownlike
-                    spikes on their surfaces.
-                </p>
-                <p class="flow-text grey-text">
-                    “CO” stands for corona, “VI” for virus, “D” for disease, and “19” refers to 2019, the year
-                    in which it was first discovered. COVID-19 is a new disease caused by a novel member of the
-                    coronavirus family — SARS-CoV-2 — that’s a close cousin to the SARS and MERS viruses that
-                    have caused outbreaks in the past. There is still much to learn about the disease.
-                </p>
+        <section class="showcase row">
+            <div class="show-text col s12 m6 l6">
+                <div>
+                    <h3><span class="red-text center">corona virus</span> </h3>
+                    <p class="flow-text grey-text">
+                        “CO” stands for corona, “VI” for virus, “D” for disease, and “19” refers to 2019, the year
+                        in which it was first discovered. COVID-19 is a new disease caused by a novel member of the
+                        coronavirus family — SARS-CoV-2 — that’s a close cousin to the SARS and MERS viruses that
+                        have caused outbreaks in the past. There is still much to learn about the disease.
+                    </p>
+                </div>
             </div>
-        </div>
+            <div class="col s12 m6 l6">
+                <img src="/assets/imgs/virion.png" alt="" class="responsive-img">
+            </div>
+        </section>
         <!-- article -->
         <article>
             <div class="container center">
@@ -113,13 +114,20 @@
                         data >></a>
                 </div>
                 <div class="third grey">
-                    <h3 class="header">signs of the virus</h3>
-                    <iframe src="https://www.youtube.com/embed/n6QwnzbRUyA?autoplay=1"></iframe>
-                    </iframe>
+                    <h3 class="header #1a237e indigo-text darken-4">signs of the virus</h3>
+                    <ul>
+                        <li> fever.</li>
+                        <li> Dry caughs</li>
+                        <li> shortness of breath.</li>
+                        <li> Headache</li>
+                        <li> Less of speech & movement.</li>
+                    </ul>
+                    <!-- <iframe src="https://www.youtube.com/embed/n6QwnzbRUyA?autoplay=1"></iframe>
+                    </iframe> -->
                 </div>
                 <div class="fourth center">
                     <i class="fa fa-ban fa-4x red-text"></i> <br>
-                    <b>STAY HOME. SAVE LIVES.</b>
+                    <h3 class="indigo-text darken-4 lighten-3">STAY HOME. SAVE LIVES.</h3>
                     <small>
                         <h6 class="indigo-text darken-4 lighten-3">help stop corona virus</h6>
                     </small>
@@ -147,7 +155,7 @@
         </article>
         <!-- fixed social button -->
         <section class="">
-            <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <div class="fixed-action-btn" style="bottom: 40px; right: 24px;">
                 <i class="fa fa-telegram small mdi-editor-mode-edit"></i>
 
                 <ul>
@@ -178,7 +186,6 @@
                         <h5>stay connected</h5>
                         <small>Join millions receiving regular updates</small>
                         <form>
-
                             <div class="input-field">
                                 <input id="email" type="email" class="validate">
                                 <label for="email" data-error="wrong" data-success="right">Email</label>
@@ -187,17 +194,10 @@
                                 <button type="submit" class="btn #1a237e indigo darken-4 right"
                                     style="width: 100%;">Subscribe</button>
                             </div>
-                            <br>
                         </form>
-                        <!-- <div class="flex">
-                        <i class="fa fa-instagram fa-2x"></i>
-                        <i class="fa fa-facebook fa-2x"></i>
-                        <i class="fa fa-linkedin fa-2x"></i>
-                        <i class="fa fa-twitter fa-2x"></i>
-                    </div> -->
                     </div>
-                    <div class="col m4 l4 s12 center white">
-                        <h5 class="black-text">The virion.</h5>
+                    <div class="col m4 l4 s12 center">
+                        <!-- <h5 class="black-text">The virion.</h5> -->
                         <img src="./assets/imgs/virion.png" alt="" class="responsive-img">
                     </div>
                     <div class="col l4 m4 s12 center">
@@ -220,7 +220,7 @@
                             <small>
                                 <ul>
                                     <li>Telephone:<a class="grey-text text-lighten-3" href="#!">0791381663</a></li>
-                                    <li>Email Us:<a class="grey-text text-lighten-3" href="#!">contact@gmail.com</a>
+                                    <li>Email Me:<a class="grey-text text-lighten-3" href="#!">contact@gmail.com</a>
                                     </li>
                                 </ul>
                             </small>
@@ -230,16 +230,31 @@
                                 <h6 class="white-text">Follow us:</h6>
                             </small>
                             <small>
-                                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>/ <a
-                                    href="http://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>/
-                                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                                <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa fa-twitter fa-2x"></i></a>/
+                                <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa fa-facebook fa-2x"></i></a>/
+                                <a href="http://twitter.com" target="_blank" rel="noopener noreferrer"><i
+                                        class="fa fa-instagram fa-2x"></i></a>
                             </small>
                         </div>
                     </div>
                 </div>
-                <!-- my contact -->
-                <!-- <a id="socio-contact" class="waves-effect waves-light btn btn-floating right"><i class="fa fa-facebook-messenger"></i></a> -->
             </div>
+            <section class="footer-content center">
+                <!-- Modal Trigger -->
+                <span class="text-white">
+                    We
+                    <br>
+                    <i class="fa fa-heart fa-2x"></i>
+                    <br>
+                    <b>YOU</b>
+                    <br>
+                    But let your doctors do their work.
+                    <br>
+                    <b>Stay Home</b>
+                </span>
+            </section>
             <div class="footer-copyright #1a237e indigo darken-4">
                 <div class="container">
                     <ul class="row">
@@ -286,7 +301,7 @@
             <div class="container">
                 <h4 class="center indigo-text">Know the history.</h4>
                 <iframe src="https://www.labmanager.com/lab-health-and-safety/covid-19-a-history-of-coronavirus-22021"
-                    width="100%" height="300px" frameborder="0"></iframe>
+                    width="100%" height="300" frameborder="0"></iframe>
             </div>
         </div>
         <div class="modal-footer">

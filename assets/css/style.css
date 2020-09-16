@@ -1,89 +1,96 @@
-i.fa{
-    padding: 20px !important;
-    color: #1a237e;
+/* globals */
+:root {
+  --primaryColor: #c7c7c7;
+  --gradientColor: yellow;
+  --mainBG: #020316;
+  --gradientBG: #6c7864;
+  --mainBlack: #000000;
+  --mainWhite: #ffffff;
 }
-b{
-    font-size: 30px;
-    font-weight: 700;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
-ul li{
-    list-style: none;
+i.fa {
+  padding: 20px !important;
+  color: var(--gradientBG);
+}
+b {
+  font-size: 30px;
+  font-weight: 700;
+}
+ul li {
+  list-style: none;
 }
 
-ol li{
-    list-style: disc;
+ol li {
+  list-style: disc;
 }
-p.flow-text{
-    font-size: 24px;
-}
-a.nav-link{
-    color:#1a237e;
-}
-h1,h2,h3,h4,h5,h6{
-    text-transform: uppercase;
-}
-header{
-    background: white;
-}
-nav{
-    text-transform: uppercase;
-}
-.sticky-top{
-    position: sticky;
-}
-.showcase{
-    background: linear-gradient(rgb(0, 0, 0,0.9), rgba(0, 0, 0, 0.9)),url('../imgs/covid.jpg') no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 85vh !important;
-}
-.showcase .show-text{
-    text-align: left !important;
-}
-.showcase .show-text div{
-    margin: 20% auto 20% auto;
-}
-.showcase .show-text h3{
-    color: #1a237e;
-    /* margin: 2% auto; */
-}
-.showcase h3::before{
-    content: "";
-    height: 10px;
-    width: 100px;
-    background: #fff;
-    display: inline-block;
-    margin:0 10px 5px 10px;
-}
-.showcase h3::after{
-    content: "";
-    height: 10px;
-    width: 100px;
-    background: #fff;
-    display: inline-block;
-    margin:0 10px 5px 10px;
-}
-.showcase p.flow-text{
-    font-family: 'Montserrat',sans-serif;
-    line-height: 40px;
-    margin: 2% auto;
-    /* width: 90%; */
-    text-align: left !important;
-    overflow-y: hidden;
-    font-size: 24px !important;
-    /* padding: 20px; */
-}
-.showcase .show-text{
-        margin: 0;
-        text-align: center;
-    }
-.showcase img.responsive-img{
-        
-        width: 90%;
-        margin: 10% auto;
-    }
 
-article h4::before{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  color: var(--mainBG);
+}
+/* end globals */
+
+/* navbar */
+nav {
+  text-transform: uppercase;
+  background: var(--gradientBG) !important;
+}
+/* end navbar */
+
+/* showcase */
+.showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../imgs/battie.jpg');
+  /* background: url(../imgs/battie.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.showcase h2 {
+  color: var(--mainWhite);
+  font-size: 12rem;
+  border-bottom: 1rem solid var(--primaryColor);
+}
+/* intro */
+section.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* end intro */
+
+/* parallax */
+section.parallax-content {
+  color: var(--mainWhite);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section.parallax-content p {
+  text-align: center;
+  line-height: 3rem;
+}
+section.parallax-content img {
+  max-width: 50%;
+}
+/* end parallax */
+
+/* article */
+/* article h4::before{
     content: "";
     height: 5px;
     width: 100px;
@@ -98,8 +105,8 @@ article h4::after{
     background: #1a237e;
     display: inline-block;
     margin:0 10px 10px 10px;
-}
-section.content{
+} */
+/* section.content{
     background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),url('../imgs/Coronavirus-Detection.jpg');
     height: 50vh;
     background-attachment: fixed;
@@ -112,186 +119,180 @@ section.content span{
 .contact ul{
     display: flex;
     align-items: center;
+} */
+section.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 !important;
 }
-.section{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding: 0 !important;
-    
-}
-section.section div{
-    margin: 0;
-    padding: 12%;
+section.grid div {
+  margin: 0;
+  padding: 12%;
 }
 
-section.section div.left{
-    color: #fff;
+section.grid div.second {
+  color: #fff;
+  background: var(--gradientBG);
 }
-section.content{
-    padding: 0 !important;
+section.grid div.second a {
+  color: var(--mainBG);
+}
+section.grid div.third {
+  background: var(--primaryColor);
+  color: var(--gradientBG);
+  text-transform: capitalize;
+  line-height: 2.5rem;
+}
+section.grid div.fourth b {
+  color: var(--gradientBG);
+  font-weight: 300;
+}
+/* end grid section */
+/* demo section */
+section.demo {
+  position: relative;
+}
+section.demo .demo-text {
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--mainBG);
+  border-radius: 3rem;
+  padding: 5rem;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 30px;
+  top: 30%;
+}
+section.demo .demo-text b {
+  color: var(--gradientBG);
+  font-weight: 300;
+}
+/* end demo */
 
+/* scroll icon */
+#scrollIcon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }
-section.content span a{
-    margin: 10% 0% 10% 0%;
-    border-radius: 30px;
-    background-color: #fff;
-    mix-blend-mode: screen;
-}
-section.content span i{
-    /* color: rgba(255, 255, 255, 0.87); */
-    color: black;
-}
+
+/* end scrol icon */
+/* footer */
 footer{
-    background: #1a1a1a;
-    color: #808080;
-}
-footer div.flex{
-    display: flex;
-    justify-content: space-around;
-}
-.footer-content{
-    background-size: cover;
-    background: linear-gradient(rgb(0, 0, 0,0.9),rgba(0, 0, 0, 0.938)),url('../imgs/sn-hepatitis.jpg');
-    background-size: cover;
-    height: 50vh;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.footer-content span{
-    font-family: 'Montserrat',sans-serif;
-    line-height: 36px;
-    overflow-y: hidden;
-    font-size: 24px !important;
-}
-/* copyright */
-footer div.copyright{
-    padding: 5px;
-    color: #fff !important;
-    border-top: 1px solid black;
+    background: var(--gradientBG) !important;
+    color: var(--primaryColor);
+    padding: 1rem;
 }
 
-
-@media (max-width: 576px) { 
-    i.fa{
-        padding: 10px !important;
-    }
-    b{
-        font-size: 24px;
-        font-weight: 500;
-    }
-    p.flow-text{
-        font-size: 8px;
-    }
-    .showcase{
-        height: 60vh;
-    }
-    .showcase p.flow-text{
+@media (max-width: 576px) {
+  i.fa {
+    padding: 10px !important;
+  }
+  b {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  p.flow-text {
+    font-size: 8px;
+  }
+  .showcase {
+    height: 60vh;
+  }
+  .showcase p.flow-text {
     width: 100%;
     text-align: left;
     overflow-y: hidden;
     font-size: 16px;
+  }
+  .showcase .show-text {
+    margin: 0;
+    text-align: center;
+  }
+  section.section {
+    display: block;
+    width: 100%;
+  }
 }
-    .showcase .show-text{
-        margin: 0;
-        text-align: center;
 
-    }
-    section.section{
-        display: block;
-        width: 100%;
-        
-    }
+/* faqs */
 
- }
-
-
- /* faqs */
- 
-@media (max-width: 768px) { 
-    i.fa{
-        padding: 10px !important;
-    }
-    b{
-        font-size: 24px;
-        font-weight: 500;
-    }
-    p.flow-text{
-        font-size: 8px;
-    }
-    .showcase{
-        height: 60vh;
-    }
-    .showcase p.flow-text{
+@media (max-width: 768px) {
+  i.fa {
+    padding: 10px !important;
+  }
+  b {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  p.flow-text {
+    font-size: 8px;
+  }
+  .showcase {
+    height: 60vh;
+  }
+  .showcase p.flow-text {
     width: 90%;
     text-align: center;
     overflow-y: hidden;
     font-size: 16px;
+  }
+  .showcase .show-text {
+    margin: 0;
+    text-align: center;
+  }
+  section.section {
+    display: block;
+  }
 }
-    .showcase .show-text{
-        margin: 0;
-        text-align: center;
 
-    }
-    section.section{
-        display: block;
-        
-    }
- }
-
-
-@media (max-width: 992px) { 
-    i.fa{
-        padding: 10px !important;
-    }
-    b{
-        font-size: 24px;
-        font-weight: 500;
-    }
-    p.flow-text{
-        font-size: 8px;
-    }
-    .showcase{
-        height: 68vh;
-    }
-    .showcase p.flow-text{
+@media (max-width: 992px) {
+  i.fa {
+    padding: 10px !important;
+  }
+  b {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  p.flow-text {
+    font-size: 8px;
+  }
+  .showcase {
+    height: 68vh;
+  }
+  .showcase p.flow-text {
     width: 90%;
     text-align: center;
     overflow-y: hidden;
     font-size: 16px;
+  }
+  .showcase .show-text {
+    margin: 0;
+    text-align: center;
+  }
 }
-    .showcase .show-text{
-        margin: 0;
-        text-align: center;
 
-    }
-
- }
-
-@media (min-width: 1200px) { 
-    i.fa{
-        padding: 10px !important;
-    }
-    b{
-        font-size: 24px;
-        font-weight: 500;
-    }
-    p.flow-text{
-        font-size: 8px;
-    }
-    .showcase{
-        height: 68vh;
-    }
-    .showcase p.flow-text{
+@media (min-width: 1200px) {
+  i.fa {
+    padding: 10px !important;
+  }
+  b {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  p.flow-text {
+    font-size: 8px;
+  }
+  .showcase {
+    height: 68vh;
+  }
+  .showcase p.flow-text {
     width: 90%;
     text-align: center;
     overflow-y: hidden;
     font-size: 16px;
-}
-    .showcase .show-text{
-        margin: 0;
-        text-align: center;
-
-    }
+  }
+  .showcase .show-text {
+    margin: 0;
+    text-align: center;
+  }
 }

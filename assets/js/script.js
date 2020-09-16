@@ -1,26 +1,21 @@
-let rellax = new Rellax('.rellax');
+$(window).scroll(function (){
+  if ($(this).scrollTop()>50){
+      $('#back-to-top').fadeIn();
+  }else{
+      $('#back-to-top').fadeOut();
+  }
+});
+// scroll body
+$('#back-to-top').click(function () {
+$('body,html').animate({
+  scrollTop:0
+},400);
+return false;
+});
+});
 
-// (function($) {
-//     var $window = $(window),
-//         $html = $('html');
+// scroll animation
 
-//     function resize() {
-//         if ($window.width() < 514) {
-//             $("div").removeClass("horizontal");
-//         }
-
-//     }
-
-//     $window
-//         .resize(resize)
-//         .trigger('resize');
-// })(jQuery);
-
-anime({
-    targets: '.anime',
-    scale: [
-      {value: .1, easing: 'easeOutSine', duration: 500},
-      {value: 1, easing: 'easeInOutQuad', duration: 1200}
-    ],
-    delay: anime.stagger(200, {grid: [14, 5], from: 'center'})
-  });
+AOS.init({
+  duration:1200,
+});
