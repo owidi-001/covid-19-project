@@ -22,7 +22,7 @@
     <!-- nav -->
     <nav class="">
         <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo" data-aos="zoom-in">covid-19</a>
+            <a href="#!" class="brand-logo">covid-19</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars fa-2x"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Home</a></li>
@@ -44,7 +44,7 @@
     <main>
         <!-- barner area -->
         <section class="showcase">
-            <h2 class="barner">covid-19</h2>
+            <h2 class="barner" data-aos="zoom-in">covid-19</h2>
         </section>
         <!-- end barner -->
 
@@ -147,7 +147,9 @@
         <!-- section demo -->
         <section class="demo">
             <img src="./assets/imgs/posters/coronavirus-graphic-web-feature.jpg" class="responsive-img" alt="">
-            <div class="demo-text" data-aos="zoom-out">
+            <div class="demo-text" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h3>STAY HOME. SAVE LIVES.</h3>
                 <small>
                     <h6 class="">help stop corona virus</h6>
@@ -328,11 +330,13 @@
     <script>
         M.AutoInit();
     </script>
-    <script>
-        AOS.init({
-        duration:1200,
-      });
-    </script>
+    <!-- animate aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration:1500,
+    });
+  </script>
 </body>
 
 </html>
